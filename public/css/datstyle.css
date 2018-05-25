@@ -1,0 +1,964 @@
+﻿
+
+
+.datnomarpad {
+    margin-left:0;margin-right:0;padding-left:0;padding-right:0;
+}
+
+.datbioheadingtitle {
+    margin-bottom: 0.25em;
+    font-size: 1.35em;
+    line-height: 1.25em;
+    color: black
+}
+.datbioheadingtitleminor {
+    margin-bottom: 0.15em;
+    color: rgba(16, 56, 0, 1);
+}
+
+.datbioheading {
+    line-height: 1.35em;
+    margin-bottom: 2em;
+    
+}
+.datbioelement {
+    line-height: 1.35em;
+    margin-bottom: 0.35em;
+}
+.datbioelementminor {
+    margin-bottom: 0.15em;
+    color: rgba(154, 146, 40, 1);
+}
+.datrounded {
+    border-radius: 6px;
+}
+.datappstorebuttonhost {
+    display:flex;
+    justify-content:center;
+}
+.datappstorebutton {
+    width:135px;
+    height:3em;
+    float:left;
+}
+
+.datbadge {
+    display:block;
+    position:absolute;
+    top:-12px;
+    right:-3px;
+    line-height: 16px;
+    height:16px;
+    padding:0 5px;
+    color:white;
+    border-width:1px;
+    border-style:solid;
+    border-radius:10px;
+    border-color:red;
+    background-color:red;
+}
+
+.datshow {
+    visibility:visible;
+}
+.dathide {
+    visibility:hidden;
+}
+.controlhide {
+    display:none;
+}
+.singleedithosthide {
+    display:none;
+}
+.singleedithostfieldnameediting {
+    color: #005aa3;
+}
+.edithosthide {
+    display:none;
+}
+.datdisplaynone {
+    display:none;
+}
+
+.dattypeselectorhide {
+    display:none;
+}
+
+.editsingletextspan {
+    padding-left:0.25em;
+}
+
+.edithostfieldnameediting {
+    color:white;
+}
+
+.datfiveeditaddnew {
+    font-size:xx-large;
+    color:rgba(0, 99, 163, 1);
+}
+.datfiveeditremove {
+    font-size:2em;
+    opacity:0.75;
+}
+.datfiveeditremovehide {
+    display:none;
+}
+.dattypeselector1elem {
+    width:8em;
+    display:inline-block;
+    margin:0.25em;
+    vertical-align:bottom;
+}
+.datemojiselector1elem {
+    width:3em;
+    display:inline-block;
+    margin:0.25em;
+    vertical-align:top;
+}
+
+.dattypeselectorrateshrinkpadding {
+    padding-left:0.25em;
+    padding-right:0.25em;
+}
+
+.rateshrinkpadding {
+    padding-left:1em;
+    padding-right:1em;
+}
+.notrateshrinkpadding {
+    padding:0;
+}
+
+
+@-moz-keyframes datpostspinneractive {
+  to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes datpostspinneractive {
+  to {transform: rotate(360deg);}
+}
+
+@keyframes datpostspinneractive {
+  to {transform: rotate(360deg);}
+}
+.datpostspinneractive:before {
+    content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: -15px;
+  margin-left: -15px;
+  border-radius: 50%;
+  border: 8px solid white;
+  border-top-color: #FFA10A;
+  animation: datfeedspinneractive .9s linear infinite;
+}
+.datpostspinner {
+    position: absolute;
+    bottom:2em;
+    left:2em;
+    right:2em;
+    background-color: rgba(0, 99, 163, 0.75);
+  padding: 20px;
+  height: 80%;
+  margin:auto;
+}
+
+
+
+@-moz-keyframes datfeedspinneractive {
+  to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes datfeedspinneractive {
+  to {transform: rotate(360deg);}
+}
+
+@keyframes datfeedspinneractive {
+  to {transform: rotate(360deg);}
+}
+.datfeedspinneractive:before {
+    content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: -15px;
+  margin-left: -15px;
+  border-radius: 50%;
+  border: 8px solid white;
+  border-top-color: #FFA10A;
+  animation: datfeedspinneractive .9s linear infinite;
+}
+.datfeedspinner {
+    position: absolute;
+    bottom:2em;
+    left:2em;
+    right:2em;
+    background-color: rgba(0, 99, 163, 0.75);
+  padding: 20px;
+  height: 80%;
+  margin:auto;
+}
+
+.uservotingisnotpermited {
+    background-color: gainsboro;
+    opacity: 0.6;
+}
+
+.datsharedetail1elem {
+    line-height:4em;
+    padding-top:0.5em;
+    padding-right:0.5em;
+}
+
+.datgroupsettingsholder {
+    background:#ddb;
+    padding:0.25em;
+    border-radius: 6px;
+    margin-bottom:0.5em;
+    margin-left:0.25em;
+    margin-right:0.25em;
+}
+
+.datuserholder {
+    background:#ddb;
+    padding:0.25em;
+    border-radius: 6px;
+    margin-bottom:0.5em;
+    margin-left:0.25em;
+    margin-right:0.25em;
+}
+
+.datgroupeditoredithost {
+    padding:0.5em;
+    margin-top:1em;
+}
+.datgroupeditor1elem {
+    background:#ddb;
+    padding:0.25em;
+    border-radius: 6px;
+    margin-bottom:0.5em;
+    margin-left:0.25em;
+    margin-right:0.25em;
+}
+
+.datgroups1elem {
+    background:#ddb;
+    padding:0.25em;
+    border-radius: 6px;
+    margin-bottom:0.5em;
+    margin-left:0.25em;
+    margin-right:0.25em;
+}
+
+.datgroupsdetail1elem {
+    background:#ddb;
+    padding:0.25em;
+    border-radius: 6px;
+    margin-bottom:0.5em;
+    margin-left:0.25em;
+    margin-right:0.25em;
+}
+.datgroupsbluewrapper {
+    background:#8fc8f3;
+    padding:0.25em;
+    border-radius: 6px;
+}
+
+.dattypecontrolsnotify {
+    padding-top:2em;
+}
+
+.datfeed1btn {
+    min-height:2.5em;
+    font-size:1em;
+    color:white;
+}
+
+.datfeedelemheadertext {
+    padding-right:0.2em;
+    padding-left:0.1em;
+    line-height:1em;
+}
+
+.datfeedelemheadertextspan {
+    font-size:1em;
+    font-weight:700;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.datfeedelembtncontainer {
+    padding-right:0.2em;
+    padding-left:0.1em;
+    align-self:flex-end;
+    margin-bottom:1.5em;
+}
+
+.datcompareshrink1 {
+    margin-bottom:0.25em;
+}
+.datcompareshrink1pct {
+    font-size: 1em;
+    font-weight: 600;
+    color:#353131;
+}
+.datfeedelemusername {
+    display:block;vertical-align:text-top;line-height:1.5em;overflow: hidden; 
+    white-space: nowrap; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; 
+    text-overflow: ellipsis; font-size: 0.8em; 
+    font-weight: 600; color: #005aa3;
+}
+
+.feedimageholder {
+    max-height: 12em;
+    overflow:hidden;
+    padding:0.25em;
+}
+
+.feedimage {
+    max-height: 12em;
+    min-height: 6em;
+    margin:auto;
+    border: 1px solid #e0d0d0;
+}
+
+
+
+.feedelemhostofdatcountableitem {
+    padding:0;
+    margin-top:-0.5em;
+}
+.datfeedelemcontentwrapper {
+    margin-left: 0; margin-right: 0; 
+    padding-right: 0.25em; 
+    min-height: 12em; display: flex; 
+    display: -webkit-flex; -ms-flex-direction: row; -webkit-flex-direction: row; 
+    flex-direction: row; 
+    justify-content: center; -ms-align-content: stretch; -webkit-align-content: stretch; 
+    align-content: stretch; align-items: stretch; background: white; 
+    margin-bottom: 0.25em;
+}
+
+.datfeed1elem {
+    
+}
+
+.dateditcountableitem {
+margin-top:0.25em;
+}
+.datsentimentselector1 {
+    margin-bottom:0.4em;
+}
+.datsentimentselector1 .is3column {
+    padding-left:0.75em;
+    padding-right:0.75em;
+    padding-top:0;
+    padding-bottom:0;
+    line-height:1em;
+}
+
+.datsentimentselector1 .is3column.datwinner{
+    padding:0;
+    padding-left:0.25em;
+    padding-right:0.25em;
+    line-height:1em;
+    margin-top:-0.5em;
+}
+
+.datsentimentshrink1 {
+    margin-bottom:0.25em;
+}
+.datsentimentshrink1 .is3column {
+    padding-left:0.75em;
+    padding-right:0.75em;
+    padding-top:0;
+    padding-bottom:0;
+    line-height:1em;
+}
+.datsentimentshrink1 .is3column.datwinner{
+    padding:0;
+    padding-left:0.25em;
+    padding-right:0.25em;
+    line-height:1em;
+    margin-top:-0.5em;
+}
+.datsentimentshrink1 .is5column {
+    padding-left:0.5em;
+    padding-right:0.5em;
+    padding-top:0;
+    padding-bottom:0;
+    line-height:1em;
+}
+.datsentimentshrink1 .is5column.datwinner{
+    padding:0;
+    padding-left:0;
+    padding-right:0;
+    line-height:1em;
+    margin-top:-0.45em;
+}
+
+
+.datrateselector1 {
+    margin-bottom:0.4em;
+}
+
+.datrateselector1 .isFace.is3column {
+    padding-left:0.75em;
+    padding-right:0.75em;
+    padding-top:0;
+    padding-bottom:0;
+    line-height:1em;
+}
+
+.datrateselector1 .datfacewinner.is3column {
+    padding:0;
+    padding-left:0.25em;
+    padding-right:0.25em;
+    line-height:1em;
+    margin-top:-0.5em;
+    
+}
+
+.datrateselector1 .ratecircle {
+    width: 1em;
+}
+
+.datrateshrink1 {
+    margin-top:1em;
+    background: white;
+    margin-bottom:0.25em;
+}
+
+.datrateshrink1 .datcirclewinner {
+    background:white;
+    border-radius:0;
+    border:white;
+}
+
+.datrateshrink1 .datcirclewinner .ratecircle {
+   margin-top:-0.5em;
+   overflow:visible;
+   width:110%;
+}
+
+.datrateshrink1 .ratecircle {
+    width: 1em;
+}
+
+.datrateshrink1.datcirclewinner {
+    height: 1.5em;
+    margin-top: -0.25em;
+    margin-bottom: -0.25em;
+}
+
+.datrateshrink1 .isFace.is3column {
+    padding-left:0.75em;
+    padding-right:0.75em;
+    padding-top:0;
+    padding-bottom:0;
+    line-height:1em;
+}
+
+.datrateshrink1 .datfacewinner.is3column {
+    padding:0;
+    padding-left:0.25em;
+    padding-right:0.25em;
+    line-height:1em;
+    margin-top:-0.5em;
+    
+}
+
+.datrateshrink1 .datratecaptionarea {
+        margin-top: 0;
+    }
+
+.datrateshrink1 .isFace.is3column:not(.datfacewinner){
+        padding-left:0.75em;
+    padding-right:0.75em;
+    padding-top:0;
+    padding-bottom:0;
+    line-height:1em;
+}
+
+.datrateshrink1  .datratecaptionitem {
+        padding:0;
+    }
+
+.datuserprofile1elem {
+    width:10em;
+    display:inline-block;
+    margin:0.25em;
+    vertical-align:middle;
+}
+
+    .datuserprofile1elem .datimage {
+        max-height: 12em;
+        min-height: 6em;
+        margin:auto;
+        border: 1px solid #e0d0d0;
+    }
+
+    .datuserprofile1elem .datcountableitem .isStar{
+    margin-top:-0.75em;
+}
+    
+
+.datuserprofile1elem .isNotCircle  .datcountableitem{
+    margin-left:-0.7em;
+}
+
+.datrateshrink1 .datratecaptionitem:not(.datfacewinner) .datratecaption {
+    line-height: 1em;
+    font-size: 0.75em;
+    font-weight: 600;
+}
+
+.datratecaptionitem.datfacewinner .datratecaption {
+    line-height: 2.5em;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.datable {
+    background: white;
+    color: #ffb814;
+    border:2px solid white;
+     border-radius: 6px;
+}
+
+.datablefilter {
+    background: white;
+    color: green;
+    border:2px solid rgba(0, 90, 163, 1);
+     border-radius: 6px;
+}
+
+.datableresult {
+    background: white;
+    color: #0094ff;
+    border:2px solid rgba(0, 90, 163, 1);
+     border-radius: 6px;
+}
+
+.datableother {
+    background: white;
+    color: red;
+    border:2px solid rgba(0, 90, 163, 1);
+     border-radius: 6px;
+}
+
+.datCountableItemRated1 {
+
+}
+
+.datCountableItemRated1 .glyphicon-star {
+    font-size:1em;
+}
+
+.datCountableItemRated1 .ratecircle {
+    width:1.25em;
+}
+
+.datwhite {
+    background:white;
+}
+
+.datblue {
+    background:rgba(0, 99, 163, 1)
+}
+.datbluefaded {
+    background:rgba(0, 99, 163, 0.2)
+}
+.xdatgold {
+    background:#ffb814;
+}
+.datgold {
+    background:rgb(255, 184, 20);
+}
+.datbordergold {
+    border:2px solid rgb(255, 184, 20);
+}
+
+.datborderblue {
+    border:1px solid rgba(0, 70, 128, 1);
+}
+.dattextblueborder {
+    color: rgba(0, 70, 128, 1);
+}
+
+.dattextblue {
+    color:rgba(0, 70, 128, 1);
+}
+
+.dattextbig {
+    font-size:1.25em;
+}
+.dattextsmall {
+    font-size:0.8em;
+}
+.datttextmedium {
+    font-size:0.95em;
+}
+
+.dattextbold {
+    font-weight: 600;
+}
+
+.dattextwhite {
+    color:white;
+}
+.dattextgrey {
+    color:#808080;
+}
+
+.dattextblack {
+    color:black;
+}
+
+.dattextgold {
+    color: #FFA10A;
+}
+
+.filterselected {
+    font-weight:600;
+    color: white;
+}
+
+.datellipsisnormal {
+display:block;
+overflow: hidden; 
+white-space: nowrap; 
+-ms-text-overflow: ellipsis; 
+-o-text-overflow: ellipsis; 
+text-overflow: ellipsis;
+}
+
+.datellipsis {
+display:block;
+overflow: hidden; 
+white-space: nowrap; 
+-ms-text-overflow: ellipsis; 
+-o-text-overflow: ellipsis; 
+text-overflow: ellipsis; 
+font-size: 0.75em; 
+font-weight: 600;
+}
+
+
+.datwinner {
+    padding-left:1px;
+    padding-right:1px;
+}
+
+.hasuservoted {
+    border:3px solid #0094ff !important;
+}
+
+.datemojicaption {
+    line-height: 1em;
+    font-size: 0.75em;
+    font-weight: 600;
+}
+
+.datwinner .datemojicaption {
+    line-height: 1.1em;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.is3column {
+    padding-left:19px;
+    padding-right:19px;
+    vertical-align:middle;
+    line-height:5em;
+}
+
+.datwinner.is3column {
+    padding-left:4px;
+    padding-right:4px;
+    vertical-align:middle;
+    line-height:5em;
+}
+
+.datcommentsentiment1 .datwinner.is3column {
+    padding-left:19px;
+    padding-right:19px;
+    vertical-align:middle;
+    line-height:2em;
+}
+
+.datcommentsentiment1 .is3column:not(.datwinner) {
+    padding-left:22px;
+    padding-right:22px;
+    vertical-align:middle;
+    line-height:2em;
+}
+
+.datcommentsentiment1 .datwinner .datemojicaption {
+    line-height:2em;
+    font-size: 1em;
+    font-weight:600;
+    color:#FFA10A;
+}
+
+.datcommentsentiment1 .datemojicaption {
+    line-height:2em;
+    font-size: 1em;
+    font-weight:600;
+    color:#FFA10A;
+}
+
+.datfacewinner.is3column {
+    padding-left:4px;
+    padding-right:4px;
+    vertical-align:middle;
+    line-height:5em;
+    
+}
+.imagebackgroundforface {
+    vertical-align:unset;
+}
+
+.facecirclebackground {
+border-radius: 50%;
+width: 1.75em;
+position: relative;
+margin:0 auto;
+background:green;
+}
+
+.datrateedit1 .isFace.is3column:not(.datfacewinner) {
+    padding-left:10px;
+    padding-right:10px;
+    vertical-align:middle;
+    line-height:5em;
+}
+.datratecaptionarea {
+ margin-top:1em;
+
+}
+.datrateeditcaptionarea {
+    margin-top:0.35em;
+}
+
+.datrateedit5or10margin {
+margin-top:1.5em;
+}
+.datrateedit3margin {
+    margin-top:-1.75em;
+
+}
+
+.datratecaptionitem.text-right.col-xs-6 {
+    padding-right:7px;
+}
+.datratecaptionitem.text-left.col-xs-6 {
+    padding-left:7px;
+}
+
+
+.is5column {
+    width:20%;
+    vertical-align:middle;
+    line-height:5em;
+}
+
+.is5column.isStar {
+    width:20%;
+    vertical-align:middle;
+    line-height:1em;
+    padding-left:5px;
+    padding-right:5px;
+}
+.datrateselector1 .is5column.isStar {
+    width:20%;
+    vertical-align:middle;
+    line-height:1.8em;
+    padding-left:5px;
+    padding-right:5px;
+}
+.rateselector10padding {
+padding-bottom:0.65em;
+padding-top:0.35em;
+}
+
+.is10column {
+    width:10%;
+    padding-left:1px;
+    padding-right:1px;
+    vertical-align:middle;
+    line-height:3em;
+}
+
+.datstarwinner {
+    color:red;
+    margin:0 auto;
+}
+
+.datstarempty {
+    color:gray;
+    margin:0 auto;
+}
+
+.datcirclewinner {
+    background:#ffd800;
+    border-radius:6px;
+    border:2px solid rgba(0, 90, 163, 1);
+}
+
+.ratecircle {
+border-radius: 50%;
+width: 1.75em;
+position: relative;
+margin:0 auto;
+}
+
+.ratecircle-border {
+}
+
+.ratecircle-solid{
+background-color: whitesmoke;
+}
+
+.ratecircle:before {
+content: "";
+display: block;
+padding-top: 100%;
+}
+
+.ratecircle-inner {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+text-align: center;
+}
+
+.ratecircle-text {
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+height: 1em;
+line-height: 1em;
+font-size: 0.75em;
+}
+
+.circle {
+margin-left: 0.75em;
+border-radius: 50%;
+width: 2.5em;
+position: relative;
+}
+
+.circle-border {
+border: 2px solid #ffb814;
+}
+
+.circle-solid{
+background-color: whitesmoke;
+}
+
+.circle:before {
+content: "";
+display: block;
+padding-top: 100%;
+}
+
+.circle-inner {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+text-align: center;
+}
+
+.circle-text {
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+height: 1em;
+line-height: 1em;
+font-size: 0.75em;
+}
+
+
+.mCSB_scrollTools_vertical {
+    right: 1.2em !important;
+    width: 0.25em;
+}
+
+.scrollrootdatMenu1 .mCSB_scrollTools_vertical {
+    width: 0.25em;
+    margin-right: -1.1em !important;
+}
+
+.scrollrootdatSignReg1 .mCSB_scrollTools_vertical {
+    width: 0.25em;
+    margin-right: -0.2em !important;
+}
+
+.scrollrootdatFeed1 .mCSB_scrollTools_vertical {
+    width: 0.25em;
+    margin-right: -0.3em !important;
+}
+
+.datcontrol {
+    margin-bottom:0.25em;
+    padding-top:2em;
+}
+
+.datglyphicon {
+font-size:1.75em;
+font-weight:lighter;
+vertical-align:middle;
+}
+
+
+.datnoselect {
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+  cursor: default;
+}
+
+.panel-heading {
+  position: relative;
+}
+.panel-heading .accordion-toggle:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e072"; /* "play" icon */
+  float: right;
+  color: #b0c5d8;
+  
+
+
+  /* rotate "play" icon from > (right arrow) to down arrow */
+  -webkit-transform: rotate(-90deg);
+  -moz-transform:    rotate(-90deg);
+  -ms-transform:     rotate(-90deg);
+  -o-transform:      rotate(-90deg);
+  transform:         rotate(-90deg);
+}
+.panel-heading .accordion-toggle.collapsed:after {
+  /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+  -webkit-transform: rotate(90deg);
+  -moz-transform:    rotate(90deg);
+  -ms-transform:     rotate(90deg);
+  -o-transform:      rotate(90deg);
+  transform:         rotate(90deg);
+}

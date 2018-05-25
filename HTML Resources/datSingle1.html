@@ -1,0 +1,234 @@
+<div class="datSingle1 dattypesingle1  col-xs-12 datnoselect"
+     data-bind="datSingle1: $data"
+     style="">
+    <div class="datgold" style="height:0.25em;"></div>
+    <div class="scrollrootdatSingle1 mCustomScrollbar row"
+         id="scrollrootdatSingle1"
+         style="overflow:auto;"
+         data-bind="style: { height: panelprops()['responsiveheight']}">
+        <div class="col-xs-12 datgold"
+             data-bind="with: $data.datacontext">
+            <div style="margin:0.25em;margin-top:0;margin-bottom:0;background:white;">
+                <div class="row"
+                     style="padding-bottom:0.75em; padding-top: 0.25em;">
+                    <div class="col-xs-6">
+                        <div class="col-xs-12 text-left datnomarpad"
+                             style="padding-left:0.25em;">
+                            <div class="col-xs-3 datnomarpad"
+                                 style=""
+                                 data-bind="click: $root.toUserProfile.bind($data, $root)">
+                                <img data-bind="attr:  {src: $data.ownerPhoto}" alt="owner"
+                                     class="img-responsive"
+                                     style="vertical-align:middle;" />
+                            </div>
+                            <div class="col-xs-9" style="padding-left:0.5em;height:3em;">
+                                <span class="text-left"
+                                      data-bind="text: userName"
+                                      style="display:block;vertical-align:text-top;line-height:1.5em;overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; font-size: 0.8em; font-weight: 600; color: #005aa3;"></span>
+                                <div class=""
+                                     data-bind="ifnot: isOwnerVIEWING"
+                                     style="line-height:1.5em;vertical-align:bottom;">
+                                    <div class="datfollowpublisherbtn panel text-center"
+                                         data-bind="click: $root.toFollowUnFollow.bind($data, $root)"
+                                         style="margin-bottom:0;background:#005aa3;">
+                                        <span data-bind="text: isFollowingText"
+                                              style="font-size: 0.8em;color:white;font-weight:600;">Follow</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-xs-4 text-left"></div>-->
+                    <div class="col-xs-6 text-right"
+                         style="vertical-align:middle;line-height: 1.25em; color: #005aa3; font-size: 0.8em;">
+                        <div class="col-xs-12 datnomarpad">
+                            <div style="padding-right:0.5em;"><span data-bind="text: $data.updatedAt"></span></div>
+                            <div style="padding-right:0.5em;"><span data-bind="text: $data.createdAt"></span></div>
+                            <div style="padding-right:0.5em;">
+                                <span data-bind="text: $data.publicPrivate"
+                                      class="dattextblack dattextbold"></span>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-12 datnomarpad"
+                             style="padding-top:0.25em;padding-right:0.5em;">
+                            <div class="col-xs-10"></div>
+                            <div class="col-xs-2 text-right datnomarpad"
+                                 data-bind="if: isShareable"
+                                 style="">
+                                <div class="datsharedatbtn text-center"
+                                     data-bind="click: shareTapHandler.bind($data,'SHAREDAT')"
+                                     style="">
+                                    <img data-bind="attr:  {src: $data.sharePhoto}" alt="share"
+                                         class="datnomarpad img-responsive"
+                                         style="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="padding-right:0.5em;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 datgold"
+             data-bind="with: $data.datacontext"
+             style="">
+            <div class="col-xs-12 datnomarpad" style="padding-left:0.25em;padding-right:0.25em;">
+                <div class="col-xs-12 datnomarpad"
+                     data-bind="if: isimagepopulated"
+                     style="background:white;padding-bottom:0.25em;">
+                    <i class="thumbnail datsinglemainimageholder"
+                       data-bind="datImageViewPopup1: $data, attr:{ href: $data.mainImage}"
+                       style="max-height:18em;margin-bottom:0;border:0;">
+                        <img data-bind="attr:  {src: $data.mainImage}" alt="dat"
+                             style="margin:0 auto;max-width:100%;max-height:18em;"
+                             class="datrounded datborderblue" />
+                    </i>
+                </div>
+                <div class="col-xs-12 datnomarpad"
+                     data-bind="if: $data.titleText"
+                     style="background:white;">
+                    <div class="datnomarpad"
+                         data-bind="style: {paddingBottom: isimagepopulated() ? '0.75em' : '0'}, css:{ 'col-xs-11': islinkedmediapopulated, 'col-xs-12': !islinkedmediapopulated()}"
+                         style="vertical-align:middle;line-height:2em;font-size:0.9em;color: #005aa3;background:white;padding-left:0.25em;padding-right:0.25em;">
+                        <div class="col-xs-12 text-left datnomarpad dattextblue dattextmedium dattextbold datrounded"
+                             data-bind="css: {'datborderblue': isimagepopulated}"
+                             style="padding:0.5em;padding-bottom:1em;">
+                            <p data-bind="text:  $data.titleText "
+                               style="padding-left:0.25em;line-height:1em;"></p>
+                        </div>
+                    </div>
+                    <div class=" datselectoritem datnomarpad"
+                         data-bind="css:{ 'col-xs-1': islinkedmediapopulated, 'datdisplaynone': !islinkedmediapopulated()}"
+                         style="">
+                        <div class=" col-xs-12 datnomarpad"
+                             data-bind="if: islinkedmediapopulated">
+                            <div class="">
+                                <a data-bind="attr: {href: seeStoryUrl}" target="_blank">
+                                    <i class="col-xs-12 thumbnail"
+                                       style="max-height:18em;margin-bottom:0;border:0;">
+                                        <img data-bind="attr:  {src: linkedMediaIcon}" alt="dat"
+                                             style="margin:0 auto;max-width:100%;max-height:18em;" />
+                                    </i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="datsinglecontentmodel" class="col-xs-12 text-center prweb-dat-svg-parent datgold"
+             data-bind="foreach: { data: contentmodelcolxn, afterRender: wigetizeSingleDatContent }"
+             style="">
+
+            <div class="datsingle1elem row"
+                 style="background: white;margin-left:0.25em;margin-right:0.25em;">
+                <div class="col-xs-12" data-bind="html: $data.modelcore.html"></div>
+            </div>
+
+        </div>
+
+        <div id="datresponsefeedcontainer"
+             data-bind="foreach: { data: panelprops()['responsefeedcolxn'], afterRender: widgetizeResponseFeed }"
+             style="">
+            <div id="datresponsefeedholder" data-bind="html: html"></div>
+        </div>
+
+        <div class="col-xs-12 text-center datgold datcommentfeedgadget">
+            <div id="datsinglecommententrybutton" class="row"
+                 style="background: white;margin-left:0.25em;margin-right:0.25em;">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-4 datgold dattextblue dattextbold datrounded" style="margin-bottom:0;text-align:center;font-size:0.8em;">Comment</div>
+                <div class="col-xs-4"></div>
+            </div>
+        </div>
+        <div class="col-xs-12 text-center datgold datcommentfeedgadget"
+             data-bind="datCommentFeed1: $data">
+            <div style="background: white;margin-left:0.25em;margin-right:0.25em;padding-bottom:10em;">
+                <div id="datCommentFeed1colxn" class="text-center dattextblack dattextbold"
+                     data-bind="text: $data.panelprops()['commentCount']"></div>
+                <div data-bind="foreach: { data: $data.panelprops()['commentFeedColxn'], afterRender: manageCommentScroll }">
+
+                    <div class="datcommentfeed1elem "
+                         style="background: white;padding:0.25em;">
+                        <div class="datcomment1elem" data-bind="datCommentElem1: $data"
+                             style="padding-top:0.25em;margin-bottom:0.5em;">
+                            <div class="row" style="font-family:Arial, Helvetica, sans-serif;">
+                                <div class="col-xs-2 text-center"
+                                     data-bind="click: $data.pnl.toUserProfile.bind($data, $root)">
+                                    <img data-bind="attr:  {src: $data.elementImage}" alt="owner"
+                                         class=""
+                                         style="vertical-align:middle;max-height:3em;max-width:3em;" />
+                                </div>
+                                <div class=" col-xs-10" style="padding-left:0.25em;">
+                                    <div class="text-left col-xs-10 datnomarpad"
+                                         style=" color: rgba(0, 70, 128, 1); font-size: small; white-space: normal; -ms-word-wrap: break-word; word-wrap: break-word; line-height: 1em; font-weight: 100;">
+                                        <div class="" data-bind="text: commentUser" style=""></div>
+                                        <div class="" data-bind="text: commentDate" style=""></div>
+                                    </div>
+                                    <div class="col-xs-2 text-right"
+                                         data-bind="click: clickHandler.bind($data, 'COMMENT')">
+                                        <div class="dattextbig dattextblack dattextbold">...</div>
+                                    </div>
+                                    <div class="text-left col-xs-12 datnomarpad"
+                                         style="line-height: 1em;padding-bottom:0.5em;">
+                                        <p class="replycommenttext datellipsis" data-bind="text: commentText, click: showMoreOrLess"></p>
+                                    </div>
+                                    <div class="text-left datrounded col-xs-12 datnomarpad"
+                                         data-bind="if: IsCommentdatcomplete">
+                                        <div class="datDatable1 dattypedatdatable1 datable text-center datrounded col-xs-12"
+                                             data-bind="click: showHideDatCountablesHandler"
+                                             style="background:#ddb;padding:0.15em;">
+                                            <div class="col-xs-10 datDatable1content datnomarpad dattextsmall"
+                                                 style="background:white;padding-top:0.5em;">
+                                                <div class="col-xs-12 datnomarpad commentelemhostofdatcountableitem"
+                                                     data-bind="with: datcountableitemVmx">
+                                                    <div class="datcountableitemhost col-xs-12 datnomarpad">
+                                                        <div class="datcountableitemhtmlholder"
+                                                             data-bind="foreach: { data: datcountableitemholder, afterRender: widgetizedatCountableItemResults }"
+                                                             style="padding-left:0;">
+                                                            <div class="datcountableitemhtmlparent"
+                                                                 style="">
+                                                                <div class="" data-bind="html: $data.html"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--<div class="col-xs-1 dattextsmall datnomarpad">
+                                                <img data-bind="attr:  {src: datableImage}" alt="emoji"
+                                                class="img-responsive"
+                                                style="vertical-align:middle;" />
+                                            </div>-->
+                                            <div class="col-xs-2 dattextbig dattextgold datnomarpad text-right">
+                                                <!--<div data-bind="if: isCommentOwner">
+                                                    <div class="dattextbig dattextgold dattextbold"></div>
+                                                </div>-->
+                                            </div>
+                                            <!--<div class="col-xs-2 dattextsmall" >
+                                                <div data-bind="if: isCommentOwner">
+                                                    <div>Delete</div>
+                                                </div>
+                                            </div>-->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div data-bind="foreach: { data: panelprops()['commententrycolxn'], afterRender: widgetizeCommentEntry }">
+        <div id="datcommententryholder" data-bind="html: html"></div>
+    </div>
+
+    <div class="datgold" style="height:0.25em;"></div>
+</div>
